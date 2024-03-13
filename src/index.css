@@ -190,6 +190,33 @@ h6 {
   visibility: visible;
 }
 
+.navbar .menu-bar {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.navbar .show {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  width: 93%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -241,6 +268,7 @@ h6 {
 .blog-details {
   margin: 20px auto;
   padding: 20px;
+  margin-top: 100px;
 }
 
 .blog-details img {
@@ -258,6 +286,7 @@ h6 {
   justify-content: space-between;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 .blog-detail-content {
@@ -397,4 +426,22 @@ h6 {
 #footer .credits {
   float: right;
   font-size: 13px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar .menu-bar {
+    display: flex;
+  }
+  .blogs .blog-card {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blogs .blog-card {
+    width: 100%;
+  }
 }
