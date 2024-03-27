@@ -26,9 +26,9 @@ const Footer = () => {
                 </div> */}
 
                 <div class="social-links">
-                <NavLink to="#" class="facebook"><FaFacebook /></NavLink>
+                <NavLink to="/" class="facebook"><FaFacebook /></NavLink>
                 <NavLink to="https://www.instagram.com/theniphal" class="instagram"><FaInstagram /></NavLink>
-                <NavLink to="#" class="linkedin"><FaLinkedin /></NavLink>
+                <NavLink to="/" class="linkedin"><FaLinkedin /></NavLink>
                 </div>
 
             </div>
